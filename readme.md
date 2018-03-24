@@ -1,4 +1,6 @@
-# Module 09: Exposing a REST Service
+# JAVA EE: Exposing a REST Service
+
+This project is based on pluralsight Java EE course
 
 This module adds a REST API in front of the book repository to allow HTTP calls to interact with the back-end with JSon format.
 
@@ -27,8 +29,8 @@ Once [Wildfly](http://wildfly.org/) is installed, deploy the war file and go to 
 
 ## Demo 
 
-* In the `com.pluralsight.bookstore.rest` package create the `JAXRSConfiguration` class to configure the REST api to the `api` web root
-* In the `com.pluralsight.bookstore.rest` package create the `BookEndpoint` and define the methods createBook (POST), getBook (GET), deleteBook (DELETE), getBooks (GET) and countBooks (GET)
+* In the `com.nazmul.bookstore.rest` package create the `JAXRSConfiguration` class to configure the REST api to the `api` web root
+* In the `com.nazmul.bookstore.rest` package create the `BookEndpoint` and define the methods createBook (POST), getBook (GET), deleteBook (DELETE), getBooks (GET) and countBooks (GET)
 * In the directory `src/main/resources` create an `import.sql` to add data to the database (make sure to add a `sql-load-script-source` property in the `persistence.xml` file
 
 *To execute the application you have to build it (`mvn clean package`) and then deploy the `bookstore-back.war` into [WildFly](https://wildfly.org).*
